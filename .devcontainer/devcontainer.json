@@ -1,0 +1,27 @@
+{
+    "name": "Megu Container",
+    "dockerComposeFile": [
+        "../docker-compose.yml"
+    ],
+    "service": "env",
+    "workspaceFolder": "/workspace",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "denoland.vscode-deno",
+                "PeggyJS.peggy-language",
+                "tamasfe.even-better-toml",
+                "christian-kohler.path-intellisense"
+            ],
+            "settings": {
+                "deno.enable": true,
+                "deno.lint": true,
+                "deno.unstable": true,
+                "editor.formatOnSave": true,
+                "[typescript]": {
+                    "editor.defaultFormatter": "denoland.vscode-deno"
+                }
+            }
+        }
+    }
+}
